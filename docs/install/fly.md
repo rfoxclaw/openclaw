@@ -15,7 +15,7 @@ read_when:
 
 - [flyctl CLI](https://fly.io/docs/hands-on/install-flyctl/) installed
 - Fly.io account (free tier works)
-- Model auth: Anthropic API key (or other provider keys)
+- Model auth: API key for your chosen model provider
 - Channel credentials: Discord bot token, Telegram token, etc.
 
 ## Beginner quick path
@@ -153,7 +153,7 @@ cat > /data/openclaw.json << 'EOF'
     "defaults": {
       "model": {
         "primary": "anthropic/claude-opus-4-6",
-        "fallbacks": ["anthropic/claude-sonnet-4-5", "openai/gpt-4o"]
+        "fallbacks": ["anthropic/claude-sonnet-4-6", "openai/gpt-4o"]
       },
       "maxConcurrent": 4
     },
